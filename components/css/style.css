@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #85888C;
+    --lightGray: #e1e4e5;
+    --orange: #ff6b00;
+    --darkOrange: #eb6200;
+    --lightOrange: #fd8128;
+    --red: #ff3860;
+    --green: #09c372;
+    --darkBlue: #00168a;
+    --lightBlue: #29b5e3;
+    --purple: #8477b7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--white);
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+a {
+    color: var(--black);
+}
+
+a:hover {
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+nav {
+    top: 0;
+    box-shadow: 1px 1px 5px 0px var(--gray);
+    width: 100%;
+}
+
+#navbarNav a:hover {
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: var(--orange);
+}
+
+.header-image {
+    background-image: url(https://www.trenersquashe.cz/wp-content/uploads/2018/02/skp_5012.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    margin-top: 90px;
+}
+
+.centered {
+    position: absolute;
+    align-items: center;
+    padding-left: 120px;
+    padding-right: 120px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+
+.socials {
+    padding: 0 10px;
+}
+
+button {
+    align-self: center;
+}
+
+.bg-gray {
+    background-color: var(--lightGray);
+}
+
+#carouselExampleFade {
+    max-width: 720px;
+    margin: auto;
+}
+
+
+
+@media screen and (max-width: 1040px) {
+
+    .header-image {
+        background-image: url(https://www.trenersquashe.cz/wp-content/uploads/2018/02/skp_5012.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 70vh;
+        margin-top: 90px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    #portrait {
+        margin: auto;
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .header-image {
+        background-image: url(https://www.trenersquashe.cz/wp-content/uploads/2018/02/skp_5012.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 70vh;
+        margin-top: 90px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #portrait {
+        margin: auto;
+        max-width: 480px;
+    }
+}
